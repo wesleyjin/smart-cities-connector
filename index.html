@@ -8,8 +8,27 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="js/test.js"></script>
   </head>
   <body>
+
+  <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    function toggle_sign(e) {
+       if (e.innerHTML.charAt(0) == '-')
+          e.innerHTML = '+'.concat(" ",e.innerHTML.slice(2));
+       else 
+          e.innerHTML = '-'.concat(" ",e.innerHTML.slice(2));
+    }
+//-->
+</script>
     <section class="page-header">
       <h1 class="project-name">CE 88 Data Science for Smart Cities</h1>
       <h2 class="project-tagline">A Fall 2016 Data Science Connector Course </h2>
@@ -32,93 +51,203 @@
 <h3>Syllabus</h3>
 
 <h4>Introduction: Cities as complex systems</h4>
-<b>August 29</b>
-<ul>
-  <li>Introduction to urban systems</li><!--<a href="http://data8.org/smart-cities-connector/lecture_slides/CE88_Lecture_1.pdf"> Slides </a></li> -->
-  <li>Modeling principles</li>
+<ul> <div onclick="toggle_sign(this)">+ <b> August 29 - Intro to Urban systems</b> </div>
+
 </ul>
 
-<b>September 12</b> - Minilab 1 - Homework 1
+
+<!-- <ul>
+  <li>Introduction to urban systems</li><a href="http://data8.org/smart-cities-connector/lecture_slides/CE88_Lecture_1.pdf"> Slides </a></li> 
+  <li>Modeling principles</li>
+</ul> -->
+
+<ul><div onclick="toggle_visibility('Sep12'); toggle_sign(this);">+ <b>September 12 - Spatio-temporal nature of urban data</b> - <span title="Mini-lab 1">ML1</span> - <span title="Homework 1">HW1</span> - Slides </div>
 <!-- <a href="https://data8.berkeley.edu/hub/interact?repo=smart-cities-connector&path=demos"> Mini-lab 1 </a> - <a href="http://data8.org/smart-cities-connector/homeworks/CE88_Homework1.pdf"> Homework 1 </a>-->
-<ul>
-  <li>Spatio-temporal nature of urban data </li>
-  <li>Data flow in cities </li>
+  <ul id = "Sep12" style="display:none">
+    <li>Lab concepts</li>
+    <ul>
+      <li> Traffic sensors </li>
+      <li> Period/Cyclical nature of traffic </li>
+    </ul>
+    <li>Coding concepts</li>
+    <ul>
+      <li> Tables </li>
+      <li> Plots </li>
+    </ul>
+    <li>Datascience concepts</li>
+    <ul>
+      <li> Intro to data visualization </li>
+      <li> Patterns in data </li>
+      <li> Visually detecting outliers </li>
+    </ul>
+  </ul>
 </ul>
+
 
 <h4>Urban data: Collection, handling and processing</h4>
-<b>September 19</b> - Mini-lab 2 - Homework 2
-<ul>
-<li>Data acquisition </li>
-<li>Census and open govenment data </li>
+<ul><div onclick="toggle_visibility('Sep19'); toggle_sign(this);">+ <b>September 19 - Data acquisition and open government data</b></div>
+  <ul id="Sep19" style="display:none">
+    <li>Lab concepts</li>
+    <ul>
+      <li> Census data </li>
+      <li> Closest point </li>
+      <li> Distance on  unit sphere </li>
+    </ul>
+    <li>Coding concepts</li>
+    <ul>
+      <li> Methods/functions </li>
+      <li> .apply() method </li>
+    </ul>
+    <li>Datascience concepts</li>
+    <ul>
+      <li> Bar graphs </li>
+    </ul>
+  </ul>
 </ul>
 
-<b>September 26</b> - Mini-lab 3 - Homework 3
-<ul>
-<li>Demand data exploration</li>
-<li>Supply data exploration</li>
+<ul><div onclick="toggle_visibility('Sep26'); toggle_sign(this);">+ <b>September 26 - Data exploration</b> </div>
+
+<ul id="Sep26" style="display:none">
+<li>Lab concepts</li>
+    <ul>
+      <li> TAZs </li>
+      <li> Travel Time/Travel Cost </li>
+      <li> Spatio-temporal nature of data </li>
+    </ul>
+    <li>Coding concepts</li>
+    <ul>
+      <li> Map </li>
+    </ul>
+    <li>Datascience concepts</li>
+    <ul>
+      <li> Geojson Files </li>
+      <li> Mapping as visualization tool </li>
+    </ul>
+  </ul>
 </ul>
 
-<b>October 3</b> - Mini-lab 4 - Homework 4
+<ul><div onclick="toggle_visibility('Oct3'); toggle_sign(this);">+ <b> October 3 - Environmental and economic impact of transportation </b> </div> <!-- ML4 -->
 
-<ul>
-<li>Environmental and economic impact </li>
-<li>Energy consumption in transportation</li>
+<ul id="Oct3" style="display:none">
+  <li>Lab concepts</li>
+  <ul>
+    <li> Demographic and income/employment data by TAZ </li>
+    <li> Calculating VMT, VHT </li>
+    <li> Impact of an event (Giants game) </li>
+  </ul>
+  <li>Coding concepts</li>
+  <ul>
+    <li>Joining tables</li>
+  </ul>
+  <li>Datascience concepts</li>
+  <ul>
+    <li>Normalizing data</li> 
+  </ul>
+  </ul>
 </ul>
 
 <h4>Data exploration: Interpreting and exploring data through visualization</h4>
-<b>October 10</b> - Mini-lab 5 - Homework 5
-<ul>
-<li>Visualization and exploratory analysis</li>
-<li>Multivariate data visualization</li>
+<ul><div onclick="toggle_visibility('Oct10'); toggle_sign(this);">+ <b>October 10 - Multivariate data visualization </b></div>
+<ul id="Oct10" style="display:none">
+  <li>Lab concepts</li>
+  <ul>
+    <li> Transportation mode choice user survey results </li>
+    <li> Transportation mode choice </li>
+  </ul>
+  <li>Coding concepts</li>
+  <ul>
+    <li>Pivot tables</li>
+  </ul>
+  <li>Datascience concepts</li>
+  <ul>
+    <li> Comparing distributions </li>
+    <li> Scatter plots </li>
+  </ul>
+</ul>
 </ul>
 
-<b>October 17</b> - Mini-lab 6 - Homework 6
-<ul>
-<li>Travel mode choice data </li>
-<li>Signal processing and data integration</li>
+<ul><div onclick="toggle_visibility('Oct17'); toggle_sign(this);">+ <b>October 17 - Linear regression </b> 
+<ul id="Oct17" style="display:none">
+  <li>Lab concepts</li>
+  <ul>
+    <li> Exploring taxi data </li>
+    <li> Trip duration vs. trip distance </li>
+  </ul>
+  <li>Coding concepts</li>
+  <ul>
+    <li> Linear regression fit line </li>
+  </ul>
+  <li>Datascience concepts</li>
+  <ul>
+    <li> Linear regression </li>
+  </ul>
+</ul>
 </ul>
 
-<b>October 24</b> - Midterm
-<ul>
-<li>Midterm Introduction</li>
+<ul><div onclick="toggle_sign(this)">+ <b>October 24 - Midterm Introduction </b> </div>
 </ul>
 
-<b>October 31</b> - Mini-lab 7 </a>
-<ul>
-<li>Predictions with linear regression</li>
+<ul><div onclick="toggle_visibility('Oct31'); toggle_sign(this);">+ <b> October 31 - Predictions with linear regression</b></div>
+<ul id="Oct31" style="display:none">
+  <li>Lab concepts</li>
+  <ul>
+    <li> Taxi data to predict travel fare </li>
+    <li> Taxi data to predict travel speed </li>
+  </ul>
+  <li>Coding concepts</li>
+  <ul>
+    <li> Plot formatting </li>
+    <li> More on methods </li>
+  </ul>
+  <li>Datascience concepts</li>
+  <ul>
+    <li> Exploring model parameters</li>
+    <li> Error/RMSE </li>
+  </ul>  
+</ul>
 </ul>
 
 <h4>Modeling and forecasting: Regression and classification</h4>
-<b>November 7</b> - Mini-lab 8 - Homework 8
-<ul>
-<li>Uncertainty in predictions - working with confidence intervals</li>
+<ul><div onclick="toggle_visibility('Nov7'); toggle_sign(this);">+ <b> November 7 - Uncertainty and Confidence Intervals</b></div>
+<ul id="Nov7" style="display:none">
+<li>Lab concepts</li>
+  <ul>
+    <li> Uncertainty in taxi fare predictions </li>
+  </ul>
+  <li>Datascience concepts</li>
+  <ul>
+    <li> Bootstrapping </li>
+    <li> Confidence Intervals </li>
+  </ul>
+</ul>
 </ul>
 
-<b>November 14</b> - Mini-lab 9 - Homework 9
-<ul>
-<li>A look at energy data - consumption and generation</li>
-<li>Variability of renewable sources</li>
+<ul><div onclick="toggle_visibility('Nov14'); toggle_sign(this);">+ <b> November 14 - Exploring energy data</b></div>
+<ul id="Nov14" style="display:none">
+<li>Lab concepts</li>
+  <ul>
+    <li> Energy from renewables </li>
+    <li> CA energy consumptions </li>
+  </ul>
+</ul>
 </ul>
 
-<b>November 21</b> - Mini-lab 10 - Homework 10
-<ul>
-<li>Jobs in datascience</li>
-<li>Notes on hypothesis testing</li>
+<ul><div onclick="toggle_sign(this)">+ <b>November 21 - Introduce Final </b></div></ul>
+
+<ul><div onclick="toggle_visibility('Nov28'); toggle_sign(this);"> + <b> November 28 - Clustering and EV charging patterns</b></div>
+<ul id="Nov28" style="display:none">
+<li>Lab concepts</li>
+  <ul>
+    <li> Energy from renewables </li>
+    <li> CA energy consumptions </li>
+  </ul>
+</ul>
 </ul>
 
-<b>November 28</b>  - Final </a>
-<ul>
-<li>EV charging patterns</li>
-<li>Introduction to clustering</li>
-</ul>
 
-<h4>Decision making: Planning and governance</h4>
-<b>December 5</b>
+
+<ul><div onclick="toggle_sign(this)">+ <b>December 5 - Course overview and final presentation </b></div></ul>
 <!-- <ul> <li>Balancing demand and supply</li> <li>Optimization</li> </ul> -->
-<ul>
-<li>Course overview</li>
-<li>Final project discussion</li>
-</ul>
 
 
 </html>
