@@ -35,7 +35,7 @@
       <h3>CCN: 33415 | Alexey Pozdnukhov | Monday 12:00-2:00 PM | Dwinelle 219 | Units: 2</h3>
       <a href="http://data8.org/" class="btn">Data8.org</a>
       <a href="http://databears.berkeley.edu/" class="btn">Databears</a>
-      <a href="https://piazza.com/class/ijembnba4oi3l2" class="btn">Piazza</a>
+      <a href="https://piazza.com/class/is22fgj8xb64b1" class="btn">Piazza</a>
       <a href="https://bcourses.berkeley.edu/courses/1413128" class="btn">bCourses</a>
     </section>
 
@@ -51,8 +51,14 @@
 <h3>Syllabus</h3>
 
 <h4>Introduction: Cities as complex systems</h4>
-<ul> <div onclick="toggle_sign(this)">+ <b> August 29 - Intro to Urban systems</b> </div>
-
+<ul> <div onclick="toggle_visibility('Aug29');toggle_sign(this)">+ <b> August 29 - Intro to Urban systems</b> </div>
+<ul id = "Aug29" style="display:none">
+    <li>Urban data concepts</li>
+    <ul>
+      <li> Introduction to urban systems</li>
+      <li> Modeling principles </li>
+    </ul>
+</ul>
 </ul>
 
 
@@ -64,7 +70,7 @@
 <ul><div onclick="toggle_visibility('Sep12'); toggle_sign(this);">+ <b>September 12 - Spatio-temporal nature of urban data</b> - <span title="Mini-lab 1">ML1</span> - <span title="Homework 1">HW1</span> - Slides </div>
 <!-- <a href="https://data8.berkeley.edu/hub/interact?repo=smart-cities-connector&path=demos"> Mini-lab 1 </a> - <a href="http://data8.org/smart-cities-connector/homeworks/CE88_Homework1.pdf"> Homework 1 </a>-->
   <ul id = "Sep12" style="display:none">
-    <li>Lab concepts</li>
+    <li>Urban data concepts</li>
     <ul>
       <li> Traffic sensors </li>
       <li> Period/Cyclical nature of traffic </li>
@@ -87,7 +93,7 @@
 <h4>Urban data: Collection, handling and processing</h4>
 <ul><div onclick="toggle_visibility('Sep19'); toggle_sign(this);">+ <b>September 19 - Data acquisition and open government data</b></div>
   <ul id="Sep19" style="display:none">
-    <li>Lab concepts</li>
+    <li>Urban data concepts</li>
     <ul>
       <li> Census data </li>
       <li> Closest point </li>
@@ -108,7 +114,7 @@
 <ul><div onclick="toggle_visibility('Sep26'); toggle_sign(this);">+ <b>September 26 - Data exploration</b> </div>
 
 <ul id="Sep26" style="display:none">
-<li>Lab concepts</li>
+<li>Urban data concepts</li>
     <ul>
       <li> TAZs </li>
       <li> Travel Time/Travel Cost </li>
@@ -129,7 +135,7 @@
 <ul><div onclick="toggle_visibility('Oct3'); toggle_sign(this);">+ <b> October 3 - Environmental and economic impact of transportation </b> </div> <!-- ML4 -->
 
 <ul id="Oct3" style="display:none">
-  <li>Lab concepts</li>
+  <li>Urban data concepts</li>
   <ul>
     <li> Demographic and income/employment data by TAZ </li>
     <li> Calculating VMT, VHT </li>
@@ -149,7 +155,7 @@
 <h4>Data exploration: Interpreting and exploring data through visualization</h4>
 <ul><div onclick="toggle_visibility('Oct10'); toggle_sign(this);">+ <b>October 10 - Multivariate data visualization </b></div>
 <ul id="Oct10" style="display:none">
-  <li>Lab concepts</li>
+  <li>Urban data concepts</li>
   <ul>
     <li> Transportation mode choice user survey results </li>
     <li> Transportation mode choice </li>
@@ -168,7 +174,7 @@
 
 <ul><div onclick="toggle_visibility('Oct17'); toggle_sign(this);">+ <b>October 17 - Linear regression </b> 
 <ul id="Oct17" style="display:none">
-  <li>Lab concepts</li>
+  <li>Urban data concepts</li>
   <ul>
     <li> Exploring taxi data </li>
     <li> Trip duration vs. trip distance </li>
@@ -189,7 +195,7 @@
 
 <ul><div onclick="toggle_visibility('Oct31'); toggle_sign(this);">+ <b> October 31 - Predictions with linear regression</b></div>
 <ul id="Oct31" style="display:none">
-  <li>Lab concepts</li>
+  <li>Urban data concepts</li>
   <ul>
     <li> Taxi data to predict travel fare </li>
     <li> Taxi data to predict travel speed </li>
@@ -210,7 +216,7 @@
 <h4>Modeling and forecasting: Regression and classification</h4>
 <ul><div onclick="toggle_visibility('Nov7'); toggle_sign(this);">+ <b> November 7 - Uncertainty and Confidence Intervals</b></div>
 <ul id="Nov7" style="display:none">
-<li>Lab concepts</li>
+<li>Urban data concepts</li>
   <ul>
     <li> Uncertainty in taxi fare predictions </li>
   </ul>
@@ -224,7 +230,7 @@
 
 <ul><div onclick="toggle_visibility('Nov14'); toggle_sign(this);">+ <b> November 14 - Exploring energy data</b></div>
 <ul id="Nov14" style="display:none">
-<li>Lab concepts</li>
+<li>Urban data concepts</li>
   <ul>
     <li> Energy from renewables </li>
     <li> CA energy consumptions </li>
@@ -236,7 +242,7 @@
 
 <ul><div onclick="toggle_visibility('Nov28'); toggle_sign(this);"> + <b> November 28 - Clustering and EV charging patterns</b></div>
 <ul id="Nov28" style="display:none">
-<li>Lab concepts</li>
+<li>Urban data concepts</li>
   <ul>
     <li> Energy from renewables </li>
     <li> CA energy consumptions </li>
